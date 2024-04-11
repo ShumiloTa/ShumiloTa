@@ -1,0 +1,8 @@
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+grape + false
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+21 + true
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
